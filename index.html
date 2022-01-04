@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Генератор паролей v.1</title>
+</head>
+
+<body>
+    <section>
+        <div class="box">
+            <h2>Генератор случайных паролей</h2>
+
+            <p><span id="result"></span></p>
+            
+            <p>Количество символов в пароле: <input id="passLenght" type="number" step="1" min="8" max="20" value="8" /></p>
+            <div class="password__generate">
+                <ul>
+                    <li><input id="number" type="checkbox" checked /> Цифры</li>
+                    <li><input id="lowercase" type="checkbox" checked /> Строчные буквы</li>
+                </ul>
+                <ul>
+                    <li><input id="uppercase" type="checkbox" checked /> Заглавные буквы</li>
+                    <li><input id="simbol" type="checkbox" /> Спецсимволы</li>
+                </ul>
+            </div>
+            <p><button id="pass_start">Сгенерировать пароль</button></p>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
